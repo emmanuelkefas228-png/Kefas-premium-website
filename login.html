@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login | Kefas Corp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div style="display:flex;justify-content:center;align-items:center;height:100vh;">
+  <div class="box">
+    <h2>Login / Sign Up</h2>
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button class="btn-primary" style="width:100%;" onclick="login()">Login</button>
+    <p style="margin-top:10px;">No account? <span onclick="signup()" style="color:#38bdf8;cursor:pointer;">Create one</span></p>
+  </div>
+</div>
+
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>

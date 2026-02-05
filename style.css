@@ -1,0 +1,147 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter,Arial,sans-serif;
+}
+
+body{
+  background:#0b1020;
+  color:white;
+  transition:.3s;
+}
+
+.light{
+  background:#f6f8fc;
+  color:#111;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 50px;
+  background:rgba(2,6,23,.8);
+  backdrop-filter:blur(10px);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:2px solid #38bdf8;
+}
+
+nav a{
+  margin:0 14px;
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+}
+
+nav a:hover{color:#38bdf8;}
+
+.btn{
+  padding:8px 16px;
+  border-radius:6px;
+  border:1px solid #38bdf8;
+  color:#38bdf8;
+  background:transparent;
+  cursor:pointer;
+}
+
+.btn-primary{
+  padding:12px 26px;
+  border-radius:8px;
+  background:#38bdf8;
+  color:#020617;
+  font-weight:bold;
+  border:none;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:110px 20px;
+}
+
+.gradient-text{
+  font-size:3rem;
+  background:linear-gradient(90deg,#38bdf8,#22c55e,#a855f7,#facc15);
+  background-size:400%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:move 6s infinite linear;
+}
+
+@keyframes move{
+  0%{background-position:0%;}
+  100%{background-position:400%;}
+}
+
+.hero p{
+  margin-top:15px;
+  color:#94a3b8;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
+  padding:60px;
+}
+
+.card{
+  background:#020617;
+  padding:22px;
+  border-radius:14px;
+  border:1px solid #1e293b;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border-color:#38bdf8;
+}
+
+/* LOGIN BOX */
+.box{
+  width:360px;
+  background:#020617;
+  padding:25px;
+  border-radius:14px;
+  border:1px solid #1e293b;
+}
+
+input{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border-radius:6px;
+  border:none;
+  outline:none;
+}
+
+/* DASHBOARD */
+.dashboard{
+  padding:30px;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
+  border-top:1px solid #1e293b;
+}

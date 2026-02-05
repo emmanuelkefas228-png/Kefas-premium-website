@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard | Kefas Corp</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="assets/logo.png">
+    <span>Kefas Dashboard</span>
+  </div>
+  <a href="admin.html" class="btn">Admin Panel</a>
+</header>
+
+<div class="dashboard">
+  <h2>📊 Business Performance Dashboard</h2>
+  <canvas id="chart" style="max-width:800px;margin-top:30px;"></canvas>
+</div>
+
+<script>
+const ctx = document.getElementById("chart");
+
+new Chart(ctx,{
+  type:"line",
+  data:{
+    labels:["Jan","Feb","Mar","Apr","May","Jun"],
+    datasets:[{
+      label:"Revenue Growth",
+      data:[12,25,18,40,32,55],
+      borderColor:"#38bdf8",
+      tension:.4
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
